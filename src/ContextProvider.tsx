@@ -17,6 +17,7 @@ export const PostsProvider: React.FC<Props> = ({ children }: Props) => {
   const [posts, setPosts] = useState<Posts[]>([]);
   const [checked, setChecked] = useState<Posts[]>([]);
 
+
   useEffect(() => {
     if (posts.length === 0) {
       const getPosts = async () => {
